@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Dashboard Monitoring</h1>
+
+        <!-- Card Lampu -->
+        <div class="card" id="lamp-status">
+            <h2>Lampu</h2>
+            <p>Status: <span id="lamp-status-text">Loading...</span></p>
+            <button onclick="toggleLamp()">Toggle Lampu</button>
+        </div>
+
+        <!-- Card Suhu -->
+        <div class="card">
+            <h2>Suhu</h2>
+            <p><span id="temperature">Loading...</span> °C</p>
+        </div>
+
+        <!-- Card Kelembapan -->
+        <div class="card">
+            <h2>Kelembapan</h2>
+            <p><span id="humidity">Loading...</span> %</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
